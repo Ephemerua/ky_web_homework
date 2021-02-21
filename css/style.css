@@ -5,15 +5,59 @@
 body {
     padding-top: 50px; 
 } */
+
 /* All delay classes will take half the time to start */
+
 :root {
     --animate-delay: 0.25s;
-  }
+}
 
+/* 新增便于使用的样式：相对位置，边缘距离 */
+
+.position-relative {
+    position: relative;
+    /* relative的意思是，这个元素的子元素的位置会相对于这个元素 */
+}
+
+.margin-20 {
+    margin: 20px;
+}
+
+.aboutUs-img {
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    left: 10%
+}
+
+/* 同一元素的一组样式最好放在一起 */
+
+.detail-img {
+    position: right;
+    z-index: 1000;
+    width: 50px;
+    height: 60px;
+    left: 20%;
+}
+
+.detail-card {
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    background-color: #eeeeee;
+    border-radius: 12px;
+    left: 80px;
+    top: 5px;
+    text-align: left;
+    line-height: 50px;
+    font-size: 18px;
+}
 
 .navbar-brand {
     padding: 0;
 }
+
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -22,12 +66,13 @@ body {
     user-select: none;
 }
 
-.circle-container{
+.circle-container {
     position: relative;
     width: 60px;
     height: 100px;
 }
-.circle{
+
+.circle {
     position: relative;
     border-radius: 15px;
     background-color: #CCCCCC;
@@ -37,51 +82,32 @@ body {
     left: 50%;
 }
 
-.aboutUs-circle{
+.aboutUs-circle {
     transform-origin: 0% 50%;
 }
 
-.step-success{
+.step-success {
     background-color: #58e09c;
     box-shadow: 0 0 2px 2px #CCFF99;
 }
 
-
-
-.protein-container{
+.protein-container {
     position: relative;
     width: 150px;
     height: 225px;
 }
 
-
-
-.aboutUs-img{
-    position: relative;
-    z-index:1000;
-    width: 100%;
-    height: 100%;
-    left:10%
-}
-
-.detail-img{
-    position: right;
-    z-index:1000;
-    width: 50px;
-    height: auto;
-    left:20%;
-}
-
-.protein-img{
+.protein-img {
     position: absolute;
-    z-index:1000; 
-    width: 60%; 
-    height: 120px; 
-    left:20%;
+    z-index: 1000;
+    width: 60%;
+    height: 120px;
+    left: 20%;
 }
 
-.protein-btn{
-    position: absolute;;
+.protein-btn {
+    position: absolute;
+    ;
     text-align: center;
     top: 170px;
     left: 55px;
@@ -95,10 +121,10 @@ body {
 }
 
 .protein-btn:hover {
-    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.10), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.10), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-.protein{
+.protein {
     position: relative;
     width: 120px;
     height: 150px;
@@ -111,23 +137,7 @@ body {
     font-size: 18px;
 }
 
-
-
-
-.detail-card{
-    position: absolute;
-    width: 500px;
-    height: 50px;
-    background-color: #eeeeee;
-    border-radius: 12px;
-    left: 80px;
-    top: 10px;
-    text-align: left;
-    line-height: 50px;
-    font-size: 18px;
-}
-
-.meal-container{
+.meal-container {
     position: relative;
     width: 300px;
     height: 230px;
@@ -135,8 +145,10 @@ body {
     border-radius: 8px;
     background-size: contain;
 }
-.meal-btn{
-    position: absolute;;
+
+.meal-btn {
+    position: absolute;
+    ;
     text-align: center;
     top: 100px;
     left: 40px;
@@ -150,10 +162,10 @@ body {
 }
 
 .meal-btn:hover {
-    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.10), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.10), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-.meal{
+.meal {
     position: relative;
     width: 300px;
     top: 75px;
@@ -163,12 +175,10 @@ body {
     font-size: 18px;
 }
 
-.aboutUsBg{
+.aboutUsBg {
     position: relative;
-    background-image: url("../pic/aboutUs/banner.jpg")
-    background-size: contain;
+    background-image: url("../pic/aboutUs/banner.jpg") background-size: contain;
 }
-
 
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
@@ -176,37 +186,29 @@ body {
     }
 }
 
-
-.overlay-nocolor{
+.overlay-nocolor {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 }
 
-.width-75{
+.width-75 {
     position: absolute;
     width: 75%;
 }
 
-.navbar-brand  >img {
-    padding: 15px;  
-height: 100%;
+.navbar-brand>img {
+    padding: 15px;
+    height: 100%;
 }
-
-
-
 
 /*导航高度*/
-@media (min-width: 768px) {
-}
 
+@media (min-width: 768px) {}
 
-
-
-
-@media (max-width: 991px) { 
-.navbar-header {
+@media (max-width: 991px) {
+    .navbar-header {
         float: none;
     }
     .navbar-toggle {
@@ -214,7 +216,7 @@ height: 100%;
     }
     .navbar-collapse {
         border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
         overflow: hidden !important;
     }
     .navbar-collapse.collapse {
@@ -227,16 +229,17 @@ height: 100%;
         float: none!important;
         margin: 7.5px -15px;
     }
-    .navbar-nav > li {
+    .navbar-nav>li {
         float: none;
     }
-    .navbar-nav > li > a {
+    .navbar-nav>li>a {
         padding-top: 10px;
         padding-bottom: 10px;
     }
 }
 
 /*高度*/
+
 .navbar {
     min-height: 80px;
 }
@@ -254,7 +257,7 @@ height: 100%;
 }
 
 @media (min-width: 768px) {
-    .navbar-nav > li > a {
+    .navbar-nav>li>a {
         /* (80px - line-height of 27px) / 2 = 26.5px */
         padding-top: 26.5px;
         padding-bottom: 26.5px;
@@ -262,8 +265,8 @@ height: 100%;
     }
 }
 
-
 /*步骤条*/
+
 .step {
     position: relative;
     vertical-align: top;
@@ -307,25 +310,45 @@ height: 100%;
     background-color: #bfcbd9;
 }
 
-.is-sucess > .step-head {
+.is-sucess>.step-head {
     color: #2f318e;
     border-color: #2f318e;
 }
 
-.is-sucess > .step-head .step-circle {
+.is-sucess>.step-head .step-circle {
     background-color: #2f318e;
 }
 
-.is-sucess > .step-head > .step-line {
+.is-sucess>.step-head>.step-line {
     background-color: #2f318e;
 }
 
-
-.last-sucess > .step-head {
+.last-sucess>.step-head {
     color: #2f318e;
     border-color: #2f318e;
 }
 
-.last-sucess > .step-head .step-circle {
+.last-sucess>.step-head .step-circle {
     background-color: #2f318e;
+}
+
+.arrow-right {
+    width: 30px;
+    height: 30px;
+    border-top: 5px solid #ccc;
+    border-left: 5px solid #ccc;
+    transform: rotate(135deg)
+}
+
+.arrow-left {
+    width: 30px;
+    height: 30px;
+    border-top: 5px solid #ccc;
+    border-left: 5px solid #ccc;
+    transform: rotate(-45deg)
+}
+
+.arrow-btn{
+    position: relative;
+    top: 60%;
 }

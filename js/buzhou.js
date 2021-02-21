@@ -47,17 +47,20 @@ function clearSteps() {
     setStep(stepIndex);
 }
 
-
+//因为只有5个步骤，所以继续加step没有意义，修改了一下，对应的step圈圈也减少了一个
 function addStep(addnum) {
     if (!addnum) { addnum = 1 }
-    stepIndex += addnum;
-    setStep(stepIndex);
+    if(stepIndex < 4){
+        stepIndex += addnum;
+        setStep(stepIndex);
+    }
 }
 
 function decStep(){
-    if(stepIndex)
+    if(stepIndex){
         stepIndex -= 1;
-    setStep(stepIndex);
+        setStep(stepIndex);
+    }
 }
 
 function resetAnimate(){
