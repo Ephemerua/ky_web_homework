@@ -19,3 +19,9 @@ $(document).ready(function () {
     });
 
 });
+
+
+function show_sidebar() {
+    sidebar = document.getElementById("sidebar")
+    sidebar.removeAttribute("hidden")
+}
