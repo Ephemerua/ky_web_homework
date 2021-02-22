@@ -21,7 +21,31 @@ $(document).ready(function () {
 });
 
 
-function show_sidebar() {
+function showSidebar() {
     sidebar = document.getElementById("sidebar")
     sidebar.removeAttribute("hidden")
+    sidebar.setAttribute("class","animate__animated animate__fadeInRight")
+}
+
+function hideSidebar() {
+    sidebar = document.getElementById("sidebar")
+    sidebar.setAttribute("class","animate__animated animate__fadeOutRight")
+    // sidebar.setAttribute("hidden", "true")
+    hideSignup()
+}
+
+function showSignup(){
+    form = document.getElementById("login-form")
+    form.setAttribute("hidden", "true")
+
+    form = document.getElementById("signup-form")
+    form.removeAttribute("hidden")
+}
+
+function hideSignup(){
+    form = document.getElementById("signup-form")
+    form.setAttribute("hidden", "true")
+
+    form = document.getElementById("login-form")
+    form.removeAttribute("hidden")
 }
