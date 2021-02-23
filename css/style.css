@@ -237,7 +237,8 @@ body {
 
 .aboutUsBg {
     position: relative;
-    background-image: url("../pic/aboutUs/banner.jpg") background-size: contain;
+    background-image: url("../pic/aboutUs/banner.jpg");
+    background-size: contain;
 }
 
 @media (min-width: 768px) {
@@ -557,15 +558,16 @@ p {
     padding: 12px;
 }
 
-.social-area{
-    social-area
+.fab{
+    font-size: 20px;
 }
+
+/* .social-area{
+    
+} */
 
 @font-face{
     font-face:'Anton', sans-serif;  /*自定义字体名称*/
     font-weight:normal;  /*定义字体粗细*/
     font-style:normal;  /*定义字体样式*/
 ｝
-
-
-
