@@ -29,11 +29,11 @@ function addStep(addnum) {
     changeBackground()
 }
 
-pics = ["url('pic/aboutUs/banner.jpg')", "url('pic/banner.png')","url('pic/banner.png')"]
+pics = [ "url('pic/cc0banner1.jpg')","url('pic/aboutUs/banner.jpg')","url('pic/cc0banner2.jpg')","url('pic/cc0banner3.jpg')"]
 
 function changeBackground(){
     target = document.getElementById("bg")
-    target.style['background-image']= pics[stepIndex % 3]
+    target.style['background-image']= pics[stepIndex % 4]
 }
 
 

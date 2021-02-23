@@ -414,7 +414,7 @@ body {
     top: 60%;
 }
 
-.sidebar-btn {
+sidebar-btn {
     width: 20px;
     height: 20px;
     border-top: 5px solid white;
@@ -471,7 +471,7 @@ body {
     padding: 20px 20px;
     margin-left: 10px;
     margin-right: 10px;
-    background-color: lightgreen;
+    background-color: #F1C40F;
 }
 
 .form-label{
@@ -504,14 +504,14 @@ p {
 
 #sidebar {
     /* don't forget to add all the previously mentioned styles here too */
-    background-image: url("../pic/saladPic3.jpg");
+    background-image: url("../pic/login.jpg");
     color: #fff;
     transition: all 0.3s;
 }
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background: #000000 ;
 }
 
 /* #username{
@@ -544,6 +544,26 @@ p {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     text-align: center;
+}
+
+.meal-banner-area {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.meal-bg{
+    background-image: url("../pic/cc0banner1.jpg");
+}
+
+.community-bg{
+    background-image: url("../pic/cc0banner4.jpg");
 }
 
 .footer-area{
