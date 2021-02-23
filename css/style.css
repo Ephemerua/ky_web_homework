@@ -556,15 +556,18 @@ p {
 
 .footer-logo{
     padding: 12px;
+    text-align: center;
 }
 
-.fab{
+
+.social-area{
+    padding: 12px;
+}
+
+.social-area .fab{
+    margin-left: 10px;
     font-size: 20px;
 }
-
-/* .social-area{
-    
-} */
 
 @font-face{
     font-face:'Anton', sans-serif;  /*自定义字体名称*/
