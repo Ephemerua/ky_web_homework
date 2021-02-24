@@ -555,7 +555,7 @@ p {
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 
 .meal-bg{
@@ -564,6 +564,7 @@ p {
 
 .community-bg{
     background-image: url("../pic/cc0banner4.jpg");
+    z-index: 0;
 }
 
 .footer-area{
