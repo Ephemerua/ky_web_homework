@@ -15,7 +15,76 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
+<!-- Sidebar -->
+<nav class="animate__animated animate__fadeInRight" id="sidebar" hidden>
+    <div class="sidebar-header">
+        <div class="sidebar-btn" onclick="hideSidebar()"><i class="fas fa-times" style="width: 20px; height: 20px;position: absolute; right: 10px; top: 10px;"></i></div>
+    </div>
+    <div class="login-inputs" id="login-form">
+        <p style="color: white;">Welcome</p>
+        <div class="input-group input-group-lg mb-3 login" id="username">
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
 
+        <div class="input-group input-group-lg mb-3 login" id="password">
+            <input type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="mb-3 row">
+            <button type="submit" class="btn btn-primary sidebar-signup-btn" onclick="showSignup()">Sign up</button>
+            <button type="submit" class="btn btn-primary sidebar-login-btn">Login</button>
+        </div>
+
+
+    </div>
+    <div class="signup-inputs" id="signup-form" hidden>
+        <p style="color: white;">Create your account</p>
+        <div class="row g-3">
+            <div class="col">
+                <div class="form-label">Uername</div>
+                <input type="text" class="form-control"  aria-label="First name">
+            </div>
+        </div>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <div class="form-label">Email</div>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <div class="form-label">Password</div>
+                <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+                <div class="form-label">Address</div>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+                <div class="form-label">Address2</div>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+                <div class="form-label">City</div>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-6">
+                <div class="form-label">Postcode</div>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign up</button>
+            </div>
+        </form>
+    </div>
+</nav>
+
+<!--side bar end-->
 <body>
 
     <!--加载-->
@@ -34,8 +103,7 @@
     <header>
         <!-- Header Start -->
         <div class="header-area">
-            <div class="main-header ">
-
+            <div class="main-header " style="background-color:#F8F9F9;box-shadow: 0 0 1px 1px #EAEDED">
                 <div class="header-bottom  header-sticky">
                     <div class="container-fluid">
                         <div class="row align-items-center">

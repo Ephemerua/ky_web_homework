@@ -474,6 +474,24 @@ sidebar-btn {
     background-color: #F1C40F;
 }
 
+.home-diy-btn{
+    width: auto;
+    height: 50px;
+    padding: 20px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #28B463;
+}
+
+.home-meal-btn{
+    width: auto;
+    height: 50px;
+    padding: 20px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color:#B3D169 ;
+}
+
 .form-label{
     font-size: 15px;
     text-align: left;
