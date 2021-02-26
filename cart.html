@@ -52,7 +52,7 @@
                                             <li><a href="Home.html">Home</a></li>
                                             <li class="hot"><a href="#">Meal</a>
                                                 <ul class="submenu">
-                                                    <li><a href="Meal.html"> Selected Meal</a></li>
+                                                    <li><a href="product_list.html"> Selected Meal</a></li>
                                                     <li><a href="DIY.html"> DIY Meal</a></li>
                                                 </ul>
                                             </li>
@@ -66,7 +66,7 @@
                                 <ul class="header-right f-right d-none d-lg-block d-flex justify-content-between">
                                     <li>
                                         <div class="shopping-card">
-                                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                                            <a href="cart1.html"><i class="fas fa-shopping-cart"></i></a>
                                         </div>
                                     </li>
                                     <li class="d-none d-lg-block"> <a href="#" class="btn header-btn">Sign in</a></li>
@@ -82,23 +82,131 @@
 
     <main>
     <!-- 正文  -->
-
+        <div class="section-padding">
+            <h1 class="text-center">Cart and Check Out</h1>
+        </div>
+        <section class="cart_inner ">
+            <div class="container">
+                <div class="cart_inner">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">Product</th>
+                                <th scope="col"></th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th class="align-middle" style="width: 40px"><img src="pic/diy/1_5.svg" class="rounded float-right" alt="..."></th>
+                                <td class="align-middle">Chicken Bean</td>
+                                <td class="align-middle">$3</td>
+                                <td class="align-middle"><input type="number"value="1" min="0" max="100" step="1"></td>
+                                <td class="align-middle">$3</td>
+                            </tr>
+                            <tr>
+                                <th class="align-middle"><img src="pic/diy/3_3.svg" class="rounded float-right" alt="..."></th>
+                                <td class="align-middle">Chicken Bean</td>
+                                <td class="align-middle">$3</td>
+                                <td class="align-middle"><input type="number"value="1" min="0" max="100" step="1"></td>
+                                <td class="align-middle">$3</td>
+                            </tr>
+                            <tr>
+                                <th class="align-middle"><img src="pic/diy/2_5.svg" class="rounded float-right" alt="..."></th>
+                                <td class="align-middle">Chicken Bean</td>
+                                <td class="align-middle">$3</td>
+                                <td class="align-middle"><input type="number"value="1" min="0" max="100" step="1"></td>
+                                <td class="align-middle">$3</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>Subtotal</td>
+                                <td>$9</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="checkout_box">
+                                        <h6>
+                                            Calculate Shipping
+                                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                        </h6>
+                                        <select class="checkout_select">
+                                            <option value="1">Bangladesh</option>
+                                            <option value="2">India</option>
+                                            <option value="4">Pakistan</option>
+                                        </select>
+                                        <select class="checkout_select section_bg">
+                                            <option value="1">Select a State</option>
+                                            <option value="2">Select a State</option>
+                                            <option value="4">Select a State</option>
+                                        </select>
+                                        <input class="post_code" type="text" placeholder="Postcode/Zipcode" />
+                                         <button class="btn_1" href="">Check Out</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+<!--footer-->
+    <div class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <p></p>
+                    <p style="align: left">copyright @Eat Well</p>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="footer-logo " >
+                        <img src="pic/logo.svg" height="30px">
+                        <p class="text-success">Refresh everyday</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="social-area">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                        <i style="color: white; padding-left: 10px;">Share with your friends!</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <!-- bootstrap依赖:jquery bootstrap popper -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-LCPyFKQyML7mqtS+4XytolfqyqSlcbB3bvDuH9vX2sdQMxRonb/M3b9EmhCNNNrV"
     crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
     integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
     async></script>
-<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
-
-
-<!-- Jquery Plugins, main Jquery -->
-<script src="./assets/js/main.js"></script>
-
+<script src="js/preloader.js"></script>
+<script src="https://kit.fontawesome.com/bf6c6d0421.js" crossorigin="anonymous"></script>
 </html>

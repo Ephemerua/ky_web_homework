@@ -595,3 +595,37 @@ p {
     font-weight:normal;  /*定义字体粗细*/
     font-style:normal;  /*定义字体样式*/
 ｝
+
+
+.table-responsive{
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.cart_inner .table {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.cart_inner .btn_1 {
+    border: 1px solid transparent;
+}
+
+.cart_inner .btn_1:hover {
+    border: 1px solid #2577fd !important;
+}
+
+.checkout_box{
+    margin-left: -250px;
+    text-align: right;
+}
+
+.checkout_select{
+    display: block;
+    width: 100%;
+    background: #f7f7f7;
+    border: 1px solid #f7f7f7;
+    height: 40px;
+    margin-bottom: 20px;}
+}
