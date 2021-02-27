@@ -137,11 +137,11 @@ body {
     font-size: 18px;
 }
 
-.section-padding{
+.section-padding {
     padding: 100px 0;
 }
 
-.menu-area{
+.menu-area {
     border-top: 1px solid #eee;
 }
 
@@ -151,7 +151,6 @@ body {
     padding: 25px;
     margin-top: 50px;
 }
-
 
 .meal-item-bg {
     background-color: #ddd;
@@ -180,11 +179,11 @@ body {
     background-image: url(../pic/saladPic4.jpg)
 }
 
-.meal-price{
+.meal-price {
     display: inline;
 }
 
-.meal-order-btn{
+.meal-order-btn {
     display: inline-block;
     color: #333;
     font-size: 14px;
@@ -195,7 +194,6 @@ body {
     padding: 8px 10px;
     float: right;
 }
-
 
 .meal2-container {
     position: relative;
@@ -257,6 +255,11 @@ body {
 .width-75 {
     position: absolute;
     width: 75%;
+}
+
+.width-100 {
+    position: absolute;
+    width: 100%;
 }
 
 .navbar-brand>img {
@@ -409,7 +412,7 @@ body {
     transform: rotate(-45deg)
 }
 
-.arrow-btn{
+.arrow-btn {
     position: relative;
     top: 60%;
 }
@@ -428,8 +431,8 @@ sidebar-btn {
 /*
     ADDITIONAL DEMO STYLE, NOT IMPORTANT TO MAKE THINGS WORK BUT TO MAKE IT A BIT NICER :)
 */
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 /* .sidebar-btn {
     position: absolute;
     text-align: center;
@@ -449,7 +452,6 @@ sidebar-btn {
     box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.10), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-
 #sidebar {
     width: 30%;
     min-height: 100vh;
@@ -458,14 +460,15 @@ sidebar-btn {
     z-index: 2000;
 }
 
-.sidebar-login-btn{
+.sidebar-login-btn {
     width: 140px;
     height: 50px;
     padding: 20px 20px;
     margin-left: 10px;
     margin-right: 10px;
 }
-.sidebar-signup-btn{
+
+.sidebar-signup-btn {
     width: 140px;
     height: 50px;
     padding: 20px 20px;
@@ -474,30 +477,28 @@ sidebar-btn {
     background-color: #F1C40F;
 }
 
-.home-diy-btn{
+.home-diy-btn {
     width: auto;
     height: 50px;
-    padding: 20px 20px;
     margin-left: 10px;
     margin-right: 10px;
     background-color: #28B463;
 }
 
-.home-meal-btn{
+.home-meal-btn {
     width: auto;
     height: 50px;
-    padding: 20px 20px;
     margin-left: 10px;
     margin-right: 10px;
-    background-color:#B3D169 ;
+    background-color: #B3D169;
 }
 
-.form-label{
+.form-label {
     font-size: 15px;
     text-align: left;
 }
 
-.form-check-label{
+.form-check-label {
     font-size: 15px;
 }
 
@@ -529,7 +530,7 @@ p {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #000000 ;
+    background: #000000;
 }
 
 /* #username{
@@ -540,10 +541,9 @@ p {
     padding: 20px;
 } */
 
-#username,#password{
-}
+#username, #password {}
 
-.login-inputs{
+.login-inputs {
     position: absolute;
     top: 30%;
     left: 10%;
@@ -553,7 +553,8 @@ p {
     font-size: 20px;
     text-align: center;
 }
-.signup-inputs{
+
+.signup-inputs {
     position: absolute;
     top: 20%;
     left: 10%;
@@ -576,16 +577,16 @@ p {
     z-index: 0;
 }
 
-.meal-bg{
+.meal-bg {
     background-image: url("../pic/cc0banner1.jpg");
 }
 
-.community-bg{
+.community-bg {
     background-image: url("../pic/cc0banner4.jpg");
     z-index: 0;
 }
 
-.footer-area{
+.footer-area {
     background: #1E201F;
     height: 200px;
     display: flex;
@@ -593,29 +594,27 @@ p {
     align-items: center;
 }
 
-.footer-logo{
+.footer-logo {
     padding: 12px;
     text-align: center;
 }
 
-
-.social-area{
+.social-area {
     padding: 12px;
 }
 
-.social-area .fab{
+.social-area .fab {
     margin-left: 10px;
     font-size: 20px;
 }
 
-@font-face{
-    font-face:'Anton', sans-serif;  /*自定义字体名称*/
-    font-weight:normal;  /*定义字体粗细*/
-    font-style:normal;  /*定义字体样式*/
-｝
+/* @font-face{
+    font-face:'Anton', sans-serif;  自定义字体名称
+    font-weight:normal;  定义字体粗细
+    font-style:normal;  定义字体样式
+} */
 
-
-.table-responsive{
+.table-responsive {
     display: block;
     width: 100%;
     overflow-x: auto;
@@ -634,16 +633,21 @@ p {
     border: 1px solid #2577fd !important;
 }
 
-.checkout_box{
-    margin-left: -250px;
+.checkout_box {
     text-align: right;
 }
 
-.checkout_select{
+.checkout_select {
     display: block;
     width: 100%;
     background: #f7f7f7;
     border: 1px solid #f7f7f7;
     height: 40px;
-    margin-bottom: 20px;}
+    margin-bottom: 20px;
+}
+
+.post_code{
+    position: absolute;
+    margin-left: 15px;
+    left: 0%;
 }

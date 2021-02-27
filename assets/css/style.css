@@ -289,7 +289,11 @@ button:focus {
 }
 
 .header-bottom .main-menu ul li:hover>a {
-  color: #6fc034
+  color: white;
+}
+
+.header-bottom .main-menu ul li:hover {
+  background-color: #6fc034;
 }
 
 .header-bottom .main-menu ul li.hot {
