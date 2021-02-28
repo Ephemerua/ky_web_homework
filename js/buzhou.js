@@ -13,6 +13,7 @@ var descs = [
     ["Avocado", "Blueberry", "Coconut", "Kiwi", "Lemon", "Mango"],
     ["Acorn", "Honey", "Mayonnaise", "Olive", "Peanut", "Pepper", "Pesto", "Pickles", "Vinaigrette"],
 ]
+var plate = $("#diy_plate")[0];
 
 // 先加个id
 for (var i = 0; i < 5; i++) {
@@ -32,13 +33,14 @@ $(".step-icon").click(function () {
 
 function setStep(stepIndex) {
     $(steps).removeClass("step-success");
-    for (var i = 0; i <= stepIndex; i++) {
+    for (var i = 0; i <= stepIndex+1; i++) {
         var step = steps[i];
-        if (i < stepIndex) {
+        if (i <= stepIndex) {
             $(step).addClass("step-success");
         }
     }
     inStepIndex = 0
+    plate.setAttribute("src", "pic/step"+(stepIndex+1)+".svg")
     resetAnimate();
     setTimeout(updateMenu, 100);
 }
