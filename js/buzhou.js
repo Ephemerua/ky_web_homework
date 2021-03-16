@@ -4,7 +4,7 @@ var inStepIndex = 0;
 
 // 菜单相关
 var proteins = $(".protein-container");
-var protein_imgs = $("");
+var protein_imgs = $(".protein-img");
 var protein_descs = $(".protein");
 var descs = [
     ["Beans", "Corn", "Farfalle", "otato", "Pasta", "Peas", "Rice"],

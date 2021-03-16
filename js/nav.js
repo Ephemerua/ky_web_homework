@@ -1,18 +1,16 @@
+//通过滚动事件设置header的背景色
 $(document).ready(function () {
-
     $(window).on('scroll', function () {
-        if ($(window).scrollTop() >= 20) { // use any value lower than the navbar height, [20] is an example
+        if ($(window).scrollTop() >= 100) { // use any value lower than the navbar height, [20] is an example
 
-            $('.navbar').css({ // reducing the vertical padding from 25px to 10px
-                'padding-top': '10px',
-                'padding-bottom': '10px'
+            $('.main-header').css({ // reducing the vertical padding from 25px to 10px
+                'background':'rgb(255,255,255,0.8)',
             });
 
         } else {
 
-            $('.navbar').css({ // reset the vertical padding to its initial value [25px]
-                'padding-top': '25px',
-                'padding-bottom': '25px'
+            $('.main-header').css({ // reset the vertical padding to its initial value [25px]
+                'background':'transparent',
             });
 
         }
