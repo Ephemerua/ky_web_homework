@@ -160,8 +160,9 @@ body {
 .meal-img {
     position: absolute;
     z-index: 1000;
-    height: 180px;
-    left: -30%;
+    height: 160px;
+    left: -5%;
+    top: 20px;
 }
 
 .meal-item-bg {
@@ -171,7 +172,7 @@ body {
     height: 200px;
 }
 
-.meal-container:hover {
+.meal-card:hover {
     box-shadow: 0 3px 9px -2px #d0cece
 }
 
@@ -218,21 +219,23 @@ body {
 
 .meal-card {
     position: relative;
-    width: 120px;
-    height: 180px;
+    left: 15%;
+    height: 160px;
+    width: 270px;
     background-color: #cada83;
     border-radius: 15px;
     text-align: center;
     line-height: 120px;
     font-size: 18px;
     color: #FFFFFF;
+    margin: 20px;
 }
 
 .meal-btn {
     position: absolute;
     text-align: center;
-    top: 120px;
-    left: 240px;
+    bottom: 7%;
+    right: 5%;
     z-index: 1001;
     width: 40px;
     height: 40px;
