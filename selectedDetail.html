@@ -11,8 +11,8 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 <!-- Sidebar -->
@@ -83,6 +83,8 @@
         </form>
     </div>
 </nav>
+
+<!--side bar end-->
 <body>
 
     <!--加载-->
@@ -97,11 +99,12 @@
             </div>
         </div>
     </div>
-    <!-- Preloader End -->
+    <!-- Preloader Start -->
     <header>
         <!-- Header Start -->
-        <div class="header-area fixed-top">
-            <div class="main-header " >
+        <div class="header-area">
+            <div class="main-header ">
+
                 <div class="header-bottom  header-sticky">
                     <div class="container-fluid">
                         <div class="row align-items-center">
@@ -119,7 +122,7 @@
                                             <li><a href="Home.html">Home</a></li>
                                             <li class="hot"><a href="#">Meal</a>
                                                 <ul class="submenu">
-                                                    <li><a href="product_list.html"> Selected Meal</a></li>
+                                                    <li><a href="Meal.html"> Selected Meal</a></li>
                                                     <li><a href="DIY.html"> DIY Meal</a></li>
                                                 </ul>
                                             </li>
@@ -148,122 +151,65 @@
     </header>
 
     <main>
-    <!-- 正文  -->
-        <img class="img-fluid" src="pic/diy/banner.png" width=100% height="300px">
-        <div class="section-padding">
-            <h1 class="text-center">Cart and Check Out</h1>
-        </div>
-        <section class="cart_inner ">
-            <div class="container">
-                <div class="cart_inner">
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                            <tr>
-                                <th scope="col">Product</th>
-                                <th scope="col"></th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Quantity</th>
-                                <th scope="col">Total</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <th class="align-middle" style="width: 40px"><img src="pic/diy/1_5.svg" class="rounded float-right" alt="..."></th>
-                                <td class="align-middle">Chicken Bean</td>
-                                <td class="align-middle">$3</td>
-                                <td class="align-middle"><input type="number"value="1" min="0" max="100" step="1"></td>
-                                <td class="align-middle">$3</td>
-                            </tr>
-                            <tr>
-                                <th class="align-middle"><img src="pic/diy/3_3.svg" class="rounded float-right" alt="..."></th>
-                                <td class="align-middle">Chicken Bean</td>
-                                <td class="align-middle">$3</td>
-                                <td class="align-middle"><input type="number"value="1" min="0" max="100" step="1"></td>
-                                <td class="align-middle">$3</td>
-                            </tr>
-                            <tr>
-                                <th class="align-middle"><img src="pic/diy/2_5.svg" class="rounded float-right" alt="..."></th>
-                                <td class="align-middle">Chicken Bean</td>
-                                <td class="align-middle">$3</td>
-                                <td class="align-middle"><input type="number"value="1" min="0" max="100" step="1"></td>
-                                <td class="align-middle">$3</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>Subtotal</td>
-                                <td>$9</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <div class="checkout_box col-sm-4" style="left: 65%;">
-                            <h6>
-                                DELIVERY ADDRESS
-                                <i class="fa fa-caret-down" aria-hidden="true"></i>
-                            </h6>
-                            <select class="checkout_select">
-                                <option value="1">Select a Country</option>
-                                <option value="2">UK</option>
-                            </select>
-                            <select class="checkout_select section_bg">
-                                <option value="1">Select a City</option>
-                                <option value="2">Edinburgh</option>
-                                <option value="4">Duke</option>
-                            </select>
-                            <input class="post_code" type="text"  style="left: 50%" placeholder="Postcode/Zipcode" />
-                            <br>
-                            <br>
-                            <button class="btn hero-btn" href="Home.html">Check Out</button>
-                            <div class="section-padding">
+        <!--步骤条end-->
+        <div class="container" style="position: relative; ">
+            <!-- 圆盘 -->
+            <div class="overlay-nocolor animate__animated animate__fadeIn animate__delay-2s">
+                <div class="col-sm-4" style="left: 65%; top:100px">
+                    <img src="pic/bigbing.png" width="450" alt="mealPic">
+                </div>
+            </div>
+            <div class="section-padding">
+                <p>Selected Meal detail</p>
+                <h1 class="animate__animated animate__fadeInLeft animate__delay-1s">Check your meal</h1>
+                <!--选材start-->
+                <div style="left: 20px"><h4>Ingredients</h4></div>
+                <div style="margin-top: 20px; height: 80%;">
+                    <div class="animate__animated animate__jello animate__delay-2s">
+                        <div class="container position-relative">
+                            <img class="detail-img" src="pic/diy/1_1.svg">
+                            <div class="detail-card">
+                                Mixed Beans 200g
+                                <br/>Footprint:  130 CO2
+                            </div>
                         </div>
+                        <div class="container position-relative">
+                            <img class="detail-img" src="pic/diy/1_2.svg">
+                            <div class="detail-card" >
+                                Smoke Tofu 100g
+                                <br/>Footprint:  145 CO2
+                            </div>
+                        </div>
+                        <div class="container position-relative">
+                            <img class="detail-img" src="pic/diy/1_2.svg">
+                            <div class="detail-card" >
+                                Cabbage 200g
+                                <br/>Footprint:  124 CO2
+                            </div>
+                        </div>
+                        <div class="container position-relative">
+                            <img class="detail-img" src="pic/diy/1_2.svg">
+                            <div class="detail-card" >
+                                Avocado 100g
+                                <br/>Footprint:  240 CO2
+                            </div>
+                        </div>
+                        <p>Total:  680g CO2</p>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
-<!--footer-->
-    <div class="footer-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4">
-                    <p></p>
-                    <p style="align: left">copyright @Eat Well</p>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="footer-logo " >
-                        <img src="pic/brand.svg" height="30px">
-                        <p class="text-success">Refresh everyday</p>
+            <!--选材end-->
+                <div class="row" style="margin-top: 40px; ">
+                    <div style="margin: 10px;">
+                        <button type="button" class="btn btn-light" onclick="decStep()">Cart</button>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="social-area">
-                        <a href="#">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-dribbble"></i>
-                        </a>
-                        <i style="color: white; padding-left: 10px;">Share with your friends!</i>
-                    </div>
+                    <!--<div style="margin: 10px;">
+                        <button type="button" class="btn btn-light" onclick="addStep()">add to cart</button>
+                    </div>-->
                 </div>
             </div>
         </div>
-    </div>
+
+    </main>
 </body>
 <!-- bootstrap依赖:jquery bootstrap popper -->
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
@@ -273,7 +219,6 @@
 <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
     integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
     async></script>
-<script src="https://kit.fontawesome.com/bf6c6d0421.js" crossorigin="anonymous"></script>
 <script src="js/preloader.js"></script>
 <script src="js/nav.js"></script>
 </html>

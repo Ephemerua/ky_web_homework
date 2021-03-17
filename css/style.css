@@ -38,7 +38,6 @@ body {
     z-index: 1000;
     width: 50px;
     height: 60px;
-    left: 20%;
 }
 
 .detail-card {
@@ -50,8 +49,8 @@ body {
     left: 80px;
     top: 5px;
     text-align: left;
-    line-height: 50px;
-    font-size: 18px;
+    line-height: 20px;
+    font-size: 14px;
 }
 
 .navbar-brand {
@@ -153,16 +152,16 @@ body {
 }*/
 .meal-container {
     position: relative;
-    width: 400px;
-    height: 250px;
+    width: 300px;
+    height: 180px;
+    border-radius: 15px;
 }
 
 .meal-img {
     position: absolute;
     z-index: 1000;
-    width: 60%;
-    height: 120px;
-    left: 0%;
+    height: 180px;
+    left: -30%;
 }
 
 .meal-item-bg {
@@ -217,17 +216,30 @@ body {
     background-size: contain;
 }
 
+.meal-card {
+    position: relative;
+    width: 120px;
+    height: 180px;
+    background-color: #cada83;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 120px;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
 .meal-btn {
     position: absolute;
-    ;
     text-align: center;
-    top: 100px;
-    left: 40px;
+    top: 120px;
+    left: 240px;
     z-index: 1001;
     width: 40px;
     height: 40px;
     border-radius: 40px;
-    background-image: url("../pic/meal/buy.svg");
+    font-size: 22px;
+    color: #728346;
+    line-height: 40px;
     background-color: white;
     background-size: contain;
 }
