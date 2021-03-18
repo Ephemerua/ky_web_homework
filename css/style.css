@@ -698,3 +698,20 @@ p {
 }
 
 .top60 { margin-top:60px; }
+
+
+.accordion-btn{
+    background: #28B463;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 10px;
+    border-radius: 4px;
+    border-color: transparent;
+}
+
+.order-accordion{
+    margin: 30px 30px 0px 30px;
+   
+}
