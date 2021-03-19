@@ -13,6 +13,8 @@ var descs = [
     ["Avocado", "Blueberry", "Coconut", "Kiwi", "Lemon", "Mango"],
     ["Acorn", "Honey", "Mayonnaise", "Olive", "Peanut", "Pepper", "Pesto", "Pickles", "Vinaigrette"],
 ]
+var protein_title = $(".hhh");
+var title = ["sdasd","sdasd","asdasd","asdas","asdsad"]
 var plate = $("#diy_plate")[0];
 
 // 先加个id
@@ -111,6 +113,7 @@ function updateMenu() {
         protein_imgs[pIndex].setAttribute("src", "pic/diy/" + (idx + 1) + "_" + (i + 1) + ".svg")
         //改描述
         protein_descs[pIndex].innerHTML = descs[idx][i]
+       // protein_title[pIndex].innerHTML = title[idx][i]
     }
 }
 

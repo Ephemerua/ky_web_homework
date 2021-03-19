@@ -11,15 +11,15 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <!-- Sidebar -->
 <nav class="animate__animated animate__fadeInRight" id="sidebar" hidden>
     <div class="sidebar-header">
         <div class="sidebar-btn" onclick="hideSidebar()"><i class="fas fa-times" style="width: 20px; height: 20px;position: absolute; right: 10px; top: 10px;"></i></div>
-    </div>
+    </div> 
     <div class="login-inputs" id="login-form">
         <p style="color: white;">Welcome</p>
         <div class="input-group input-group-lg mb-3 login" id="username">
@@ -83,9 +83,8 @@
         </form>
     </div>
 </nav>
-
-<!--side bar end-->
 <body>
+
     <!--加载-->
     <!-- Preloader Start -->
     <div id="preloader-active">
@@ -98,7 +97,7 @@
             </div>
         </div>
     </div>
-    <!-- Preloader Start -->
+    <!-- Preloader End -->
     <header>
         <!-- Header Start -->
         <div class="header-area fixed-top">
@@ -120,7 +119,7 @@
                                             <li><a href="Home.html">Home</a></li>
                                             <li class="hot"><a href="#">Meal</a>
                                                 <ul class="submenu">
-                                                    <li><a href="Meal.html"> Selected Meal</a></li>
+                                                    <li><a href="product_list.html"> Selected Meal</a></li>
                                                     <li><a href="DIY.html"> DIY Meal</a></li>
                                                 </ul>
                                             </li>
@@ -149,104 +148,96 @@
     </header>
 
     <main>
-        <img class="img-fluid" src="pic/diy/banner.png" width=100% height="auto">
-        <!--步骤条end-->
-        <div class="container section-padding" style="position: relative; margin-top: 50px;">
-            <!-- 圆盘 -->
-            <div class="overlay-nocolor animate__animated animate__fadeIn animate__delay-2s">
-                <div class="col-sm-4" style="left: 70%;">
-                    <img id="diy_plate" src="pic/diyBowl.png" width="450" alt="...">
-                </div>
-                <!--sorry这里不要了<div style="position:relative; left: 85%; margin-top: 20px;">
-                    <button type="button" class="btn btn-light">Finish</button>
-                </div>-->
-            </div>
-            <div class="row">
-                <div class="circle-container">
-                    <div class="circle step"></div>
-                </div>
-                <div class="circle-container">
-                    <div class="circle step"></div>
-                </div>
-                <div class="circle-container">
-                    <div class="circle step"></div>
-                </div>
-                <div class="circle-container">
-                    <div class="circle step"></div>
-                </div>
-                <div class="circle-container">
-                    <div class="circle step"></div>
-                </div>
-            </div>
-            <h1 id="hhh" class="animate__animated animate__fadeInLeft animate__delay-1s hhh">Choose your Protein</h1>
-            <!--选材start-->
-            <div style="margin-top: 20px;">
-                <div class="row col-sm-10 animate__animated animate__fadeIn animate__delay-2s">
-                    <div class="row row-cols-auto">
-                        <div class="arrow-left arrow-btn" id="leftBtn" onclick="menuLeft()"></div>
-                        <div class="protein-container">
-                            <div class="overlay-nocolor">
-                                <img class="protein-img" src="pic/diy/1_1.svg">
-                            </div>
-                            <div class="protein">
-                                Bean
-                            </div>
-                            <div class="protein-btn"></div>
-                        </div>
-                        <div class="protein-container">
-                            <div class="overlay-nocolor">
-                                <img class="protein-img" src="pic/diy/1_2.svg">
-                            </div>
-                            <div class="protein">
-                                Corn
-                            </div>
-                            <div class="protein-btn"></div>
-                        </div>
-                        <div class="protein-container">
-                            <div class="overlay-nocolor">
-                                <img class="protein-img" src="pic/diy/1_3.svg">
-                            </div>
-                            <div class="protein">
-                                Farfalle
-                            </div>
-                            <div class="protein-btn"></div>
-                        </div>
-                        <div class="protein-container">
-                            <div class="overlay-nocolor">
-                                <img class="protein-img" src="pic/diy/1_4.svg">
-                            </div>
-                            <div class="protein">Potato
-                            </div>
-                            <div class="protein-btn"></div>
-
-                        </div>
-                        <div class="protein-container">
-                            <div class="overlay-nocolor">
-                                <img class="protein-img" src="pic/diy/1_5.svg">
-                            </div>
-                            <div class="protein">Pasta
-                            </div>
-                            <div class="protein-btn"></div>
-                        </div>
-                        <div class="arrow-right arrow-btn" id="rightBtn" onclick="menuRight()"></div>
-
-                    </div>
-                </div>
-
-            </div>
-            <!--选材end-->
-            <div class="row" style="margin-top: 40px;">
-                <div style="margin: 10px;">
-                    <button type="button" class="btn btn-light" onclick="decStep()">Back</button>
-                </div>
-                <div style="margin: 10px;">
-                    <button type="button" class="btn btn-light" onclick="addStep()">Next</button>
+        <!-- breadcrumb start -->
+        <div class="pa-breadcrumb">
+            <div class="container-fluid">
+                <div class="cart-banner-text">
+                    <h1>checkout</h1>
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li>checkout</li>
+                    </ul>
                 </div>
             </div>
         </div>
-
+        <!-- breadcrumb end -->
+        <!-- checkout start -->
+        <div class="pa-checkout spacer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="pa-bill-form">
+                            <form>
+                                <label class="pa-bill-title">
+                                    Billing details
+                                </label>
+                                <label>
+                                    <span>Full Name</span>
+                                    <input type="text"/>
+                                </label>
+                                <label>
+                                    <span>Mobile</span>
+                                    <input type="text"/>
+                                </label>
+                                <label>
+                                    <span>Address</span>
+                                    <input type="text"/>
+                                </label>
+                                <label>
+                                    <span>State</span>
+                                    <input type="text"/>
+                                </label>
+                                <label>
+                                    <span>City</span>
+                                    <input type="text"/>
+                                </label>
+                                <label>
+                                    <span>Pin code</span>
+                                    <input type="number"/>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="pa-bill-detail">
+                            <p class="pa-bill-title">Order details</p>
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>Product name</th>
+                                    <th>Price</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Black Organic Tea</td>
+                                    <td>$120</td>
+                                </tr>
+                                <tr>
+                                    <td>Black Organic Tea</td>
+                                    <td>$50</td>
+                                </tr>
+                                <tr>
+                                    <td>Oolong Tea</td>
+                                    <td>$70</td>
+                                </tr>
+                                <tr class="pa-checkout-total">
+                                    <td>Grand Total</td>
+                                    <td>$240</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="pa-place-order-btn">
+                                <button class="btn hero-btn" href="Home.html">place order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- checkout end -->
     </main>
-    <!--footer-->
+<!--footer-->
     <div class="footer-area">
         <div class="container">
             <div class="row">
@@ -287,8 +278,7 @@
 <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
     integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
     async></script>
-<script src="js/preloader.js"></script>
-<script src="js/buzhou.js"></script>
-<script src="js/nav.js"></script>
 <script src="https://kit.fontawesome.com/bf6c6d0421.js" crossorigin="anonymous"></script>
+<script src="js/preloader.js"></script>
+<script src="js/nav.js"></script>
 </html>
