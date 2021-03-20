@@ -751,6 +751,7 @@ p.pa-bill-title{
 .pa-bill-form label {
     display: flex;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .pa-bill-form label:last-child{
@@ -764,15 +765,15 @@ label.pa-bill-title,p.pa-bill-title {
 }
 
 input{
-    width: 100%;
-    height: 50px;
-    padding:0px 20px;
+    height: 30px;
+    width: 40px;
     border: 1px solid #28B463;
     outline: none;
-    border-radius: 50px;
+    border-radius: 10px;
+    text-align: center;
 }
 
-.table-responsive table th,.pa-bill-detail table th {
+.table-responsive table thead,.pa-bill-detail table th {
     background: #c6de65;
     color: #fff;
 }
@@ -781,22 +782,48 @@ input{
     border-radius: 10px 0px 0px 0px;
 }
 
+.pa-cart-box table th:first-child,.pa-bill-detail table th:last-child {
+    border-radius: 0px 10px 0px 0px;
+}
+
 .pa-bill-detail table th {
     padding: 12px 20px 13px;
     text-transform: capitalize;
     border-right: 1px solid #eee;
 }
 
-.pa-bill-detail table td {
+
+.pa-bill-detail table td:first-child {
     padding: 15px 20px;
     text-transform: capitalize;
     border: 1px solid #eee;
+    width: 100%;
+}
+
+.pa-bill-detail table td:last-child {
+    padding: 15px 20px;
+    text-transform: capitalize;
+    border: 1px solid #eee;
+    width: 20%;
 }
 
 .pa-place-order-btn {
     text-align: right;
     margin-top: 30px;
 }
+
 .cart-banner-text {
     text-align: center;
+}
+
+
+.pa-bill-form span{
+    height: 30px;
+    line-height: 30px;
+    width: 80px;
+}
+
+.pa-bill-form input{
+    margin-left: 20px;
+    width: 65%;
 }
