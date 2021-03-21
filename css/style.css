@@ -718,8 +718,8 @@ p {
 }
 
 .pa-breadcrumb {
-    padding: 91px 0 93px;
-    background: linear-gradient(45deg,rgba(0, 0, 0, 0.56),rgba(0, 0, 0, 0.56) ), url(../images/breadcrumb.jpg);
+    padding: 160px 0 120px;
+    background: linear-gradient(45deg,rgba(0, 0, 0, 0.56),rgba(0, 0, 0, 0.56) ), url(../pic/banner.png);
     background-size: cover;
 }
 

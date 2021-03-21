@@ -133,7 +133,7 @@
                                 <ul class="header-right f-right d-none d-lg-block d-flex justify-content-between">
                                     <li>
                                         <div class="shopping-card">
-                                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                                            <a href="cart.html"><i class="fas fa-shopping-cart" style="color: #f7f7f7"></i></a>
                                         </div>
                                     </li>
                                     <li class="d-none d-lg-block"> <a href="#" class="btn header-btn" onclick="showSidebar()">Sign in</a></li>
@@ -149,11 +149,17 @@
 
     <main>
     <!-- 正文  -->
-        <img class="img-fluid" src="pic/diy/banner.png" width=100% height="300px">
-        <div class="section-padding">
-            <h1 class="text-center">Cart and Check Out</h1>
+        <!-- breadcrumb start -->
+        <div class="pa-breadcrumb">
+            <div class="container-fluid">
+                <div class="cart-banner-text" ">
+                    <h1 style="color:#F8F9F9">checkout</h1>
+                </div>
+            </div>
         </div>
-        <section class="cart_inner ">
+        <!-- breadcrumb end -->
+
+        <section class="cart_inner section-padding">
             <div class="container">
                 <div class="cart_inner">
                     <div class="table-responsive">
@@ -199,9 +205,7 @@
                             </tbody>
                         </table>
                             <br>
-                            <button class="btn hero-btn" href="checkout.html" style="float: right;">Check Out</button>
-                            <div class="section-padding">
-                        </div>
+                            <a class="btn hero-btn" href="checkout.html" style="float: right;">Check Out</a>
                     </div>
                 </div>
             </div>

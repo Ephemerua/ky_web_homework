@@ -125,7 +125,7 @@
                                                 </ul>
                                             </li>
                                             <li><a href="Community.html">Community</a></li>
-                                            <li><a href="aboutUs.html">About Us</a></li>
+                                            <li><a href="cal.html">Calculation</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -150,43 +150,83 @@
 
     <main>
     <!-- 正文  -->
-    <div class="row">
-        <div class="col-4" style="height: 100%; width: 300px;">
-            <div style="height: 100px; width: 300px;">
-                <div class="circle" style="left: 30px; "></div>
+        <div class="container">
+            <div style="padding: 50px">
+                <h1>Food Emission Calculation</h1>
             </div>
-            <div style="height: 100px; width: 300px; top: 50px">
-                <div class="circle" style="left: 100px; top: 50px"></div>
-            </div>
-            <div style="height: 100px; width: 300px;">
-                <div class="circle" style="left: 150px;"></div>
-            </div>
-            <div style="height: 100px; width: 300px;">
-                <div class="circle" style="left: 150px;"></div>
-            </div>
-            <div style="height: 100px; width: 300px;">
-                <div class="circle" style="left: 100px; top: 50px"></div>
-            </div>
-            <div style="height: 100px; width: 300px;">
-                <div class="circle" style="left: 30px; top: 50px"></div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="pa-bill-form">
+                                    <form>
+                                        <label class="pa-bill-title">
+                                            Billing details
+                                        </label>
+                                        <label>
+                                            <span>Food Type</span>
+                                            <select class="calc-select" id="category-select" onchange="cascadingDropdown(foodJson)">
+
+                                                <option value="" selected="true" disabled="">Choose Food Category</option>
+
+                                                <option value="Bakery">Bakery</option>
+                                                <option value="Biscuits and confectionery">Biscuits and confectionery</option>
+                                                <option value="Cupboard">Cupboard</option>
+                                                <option value="Dairy and alternatives">Dairy and alternatives</option>
+                                                <option value="Drinks">Drinks</option>
+                                                <option value="Eggs">Eggs</option>
+                                                <option value="Fish and seafood">Fish and seafood</option>
+                                                <option value="Fruit">Fruit</option>
+                                                <option value="Grains, pulses, and legumes">Grains, pulses, and legumes</option>
+                                                <option value="Meat and alternatives">Meat and alternatives</option>
+                                                <option value="Nuts and seeds">Nuts and seeds</option>
+                                                <option value="Oils">Oils</option>
+                                                <option value="Potatoes">Potatoes</option>
+                                                <option value="Processed food">Processed food</option>
+                                                <option value="Spreads, jams, and honeys">Spreads, jams, and honeys</option>
+                                                <option value="Sauces and dressings">Sauces and dressings</option>
+                                                <option value="Vegetables">Vegetables</option>
+
+                                            </select>
+                                        </label>
+                                        <label>
+                                            <span>Food Name</span>
+                                            <select class="calc-select" id="category-select" onchange="cascadingDropdown(foodJson)">
+
+                                                <option value="" selected="true" disabled="">Choose Food Category</option>
+
+                                                <option value="Bakery">Bakery</option>
+                                                <option value="Biscuits and confectionery">Biscuits and confectionery</option>
+                                                <option value="Cupboard">Cupboard</option>
+                                                <option value="Dairy and alternatives">Dairy and alternatives</option>
+                                                <option value="Drinks">Drinks</option>
+                                                <option value="Eggs">Eggs</option>
+                                                <option value="Fish and seafood">Fish and seafood</option>
+                                                <option value="Fruit">Fruit</option>
+                                                <option value="Grains, pulses, and legumes">Grains, pulses, and legumes</option>
+                                                <option value="Meat and alternatives">Meat and alternatives</option>
+                                                <option value="Nuts and seeds">Nuts and seeds</option>
+                                                <option value="Oils">Oils</option>
+                                                <option value="Potatoes">Potatoes</option>
+                                                <option value="Processed food">Processed food</option>
+                                                <option value="Spreads, jams, and honeys">Spreads, jams, and honeys</option>
+                                                <option value="Sauces and dressings">Sauces and dressings</option>
+                                                <option value="Vegetables">Vegetables</option>
+
+                                            </select>
+                                        </label>
+                                        <label>
+                                            <span>Quality</span>
+                                            <td class="align-middle"><input type="number"value="1" min="0" max="100" step="1"></td>
+                                        </label>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                </div>
             </div>
         </div>
-        <div style="position: absolute; left: 15%; width: 85%; height: 80%; margin-top: 20px;">
-            <div style="position: absolute; top:30%; left: 20%; z-index: 1000;">
-                <h1 >We do it in sustainability</h1>
-                Global carbon emissions are increasing, <br>
-                and the climate crisis is imminent. <br>
-                Food production accounts for a quarter <br>
-                of global greenhouse gas emissions. <br>
-                Our diet is shaping the future of the environment!<br>
-            </div>    
-            <div id="bg" style="position:absolute; width: 100%;height: 100%;background-image: url('pic/cc0banner1.jpg'); background-size: cover; background-repeat: no-repeat;"></div>
-
-        </div>
-    </div>
-
-
-
     </main>
 </body>
 <!-- bootstrap依赖:jquery bootstrap popper -->
