@@ -827,3 +827,28 @@ input{
     margin-left: 20px;
     width: 65%;
 }
+
+.finish-img{
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+}
+
+.finish-img:before{
+    background-image: url(../pic/cc0banner4.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;/*-1 可以当背景*/
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.finish-text{
+    padding: 360px 200px;
+}

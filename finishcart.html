@@ -11,8 +11,8 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <!-- Sidebar -->
@@ -83,8 +83,6 @@
         </form>
     </div>
 </nav>
-
-<!--side bar end-->
 <body>
 
     <!--加载-->
@@ -99,12 +97,11 @@
             </div>
         </div>
     </div>
-    <!-- Preloader Start -->
+    <!-- Preloader End -->
     <header>
         <!-- Header Start -->
-        <div class="header-area">
-            <div class="main-header ">
-
+        <div class="header-area fixed-top">
+            <div class="main-header " >
                 <div class="header-bottom  header-sticky">
                     <div class="container-fluid">
                         <div class="row align-items-center">
@@ -136,7 +133,7 @@
                                 <ul class="header-right f-right d-none d-lg-block d-flex justify-content-between">
                                     <li>
                                         <div class="shopping-card">
-                                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                                            <a href="cart.html"><i class="fas fa-shopping-cart" style="color: #f7f7f7"></i></a>
                                         </div>
                                     </li>
                                     <li class="d-none d-lg-block"> <a href="#" class="btn header-btn" onclick="showSidebar()">Sign in</a></li>
@@ -151,42 +148,13 @@
     </header>
 
     <main>
-        <!--步骤条end-->
-        <div class="container" style="position: relative; width: 1000px">
-            <!-- 圆盘 -->
-            <div class="overlay-nocolor animate__animated animate__fadeIn animate__delay-2s">
-                <div class="col-sm-4" style="left: 65%; top:100px">
-                    <img src="pic/bigbing.png" width="450" alt="mealPic">
-                </div>
-            </div>
-            <div class="section-padding" >
-                <p style="color: #6fc034">Selected Meal detail</p>
-                <h1 class="animate__animated animate__fadeInLeft animate__delay-1s">Check your meal</h1>
-                <!--选材start-->
-                <div style="left: 20px;color: #999999"><h4>Ingredients</h4></div>
-                <div style="margin-top: 20px; height: 80%;">
-                    <div class="animate__animated animate__jello animate__delay-2s">
-                        <h5>Mixed Bean 200g 130</h5>
-                        <h5>Smoke Tofu 100g 145</h5>
-                        <h5>Cabbage 200g 124</h5>
-                        <h5>Avocado 100g 240</h5>
-                        <h5>Flavorful By Salt And Vinaigrette</h5>
-                        <br/>
-                        <p>Total:  680g CO2</p>
-                    </div>
-                </div>
-            <!--选材end-->
-                <div class="row" style="margin-top: 40px; ">
-                    <div style="margin: 10px;">
-                        <a href="cart.html" class="btn hero-btn home-diy-btn">Add to Cart</a>
-                    </div>
-                    <!--<div style="margin: 10px;">
-                        <button type="button" class="btn btn-light" onclick="addStep()">add to cart</button>
-                    </div>-->
-                </div>
+    <!-- 正文  -->
+        <div class="finish-img">
+            <div class="finish-text">
+                <h2>Well done!</h2>
+                <p style=" color: #000000;"  >Your order has been completed. Today you also contributed to low-carbon life</p>
             </div>
         </div>
-
     </main>
 </body>
 <!-- bootstrap依赖:jquery bootstrap popper -->
@@ -195,6 +163,7 @@
 <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
     integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
     async></script>
+<script src="https://kit.fontawesome.com/bf6c6d0421.js" crossorigin="anonymous"></script>
 <script src="js/preloader.js"></script>
 <script src="js/nav.js"></script>
 </html>

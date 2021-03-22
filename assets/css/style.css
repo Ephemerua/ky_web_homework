@@ -15,6 +15,12 @@ h1 {
   text-transform: normal
 }
 
+h5 {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-style: unset;
+  color: #494A46;
+}
 .f-right {
   float: right
 }

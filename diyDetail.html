@@ -152,33 +152,55 @@
 
     <main>
         <!--步骤条end-->
-        <div class="container" style="position: relative; width: 1000px">
+        <div class="container" style="position: relative; ">
             <!-- 圆盘 -->
             <div class="overlay-nocolor animate__animated animate__fadeIn animate__delay-2s">
                 <div class="col-sm-4" style="left: 65%; top:100px">
                     <img src="pic/bigbing.png" width="450" alt="mealPic">
                 </div>
             </div>
-            <div class="section-padding" >
-                <p style="color: #6fc034">Selected Meal detail</p>
+            <div class="section-padding">
+                <p>Selected Meal detail</p>
                 <h1 class="animate__animated animate__fadeInLeft animate__delay-1s">Check your meal</h1>
                 <!--选材start-->
-                <div style="left: 20px;color: #999999"><h4>Ingredients</h4></div>
+                <div style="left: 20px"><h4>Ingredients</h4></div>
                 <div style="margin-top: 20px; height: 80%;">
                     <div class="animate__animated animate__jello animate__delay-2s">
-                        <h5>Mixed Bean 200g 130</h5>
-                        <h5>Smoke Tofu 100g 145</h5>
-                        <h5>Cabbage 200g 124</h5>
-                        <h5>Avocado 100g 240</h5>
-                        <h5>Flavorful By Salt And Vinaigrette</h5>
-                        <br/>
+                        <div class="container position-relative">
+                            <img class="detail-img" src="pic/diy/1_1.svg">
+                            <div class="detail-card">
+                                Mixed Beans 200g
+                                <br/>Footprint:  130 CO2
+                            </div>
+                        </div>
+                        <div class="container position-relative">
+                            <img class="detail-img" src="pic/diy/1_2.svg">
+                            <div class="detail-card" >
+                                Smoke Tofu 100g
+                                <br/>Footprint:  145 CO2
+                            </div>
+                        </div>
+                        <div class="container position-relative">
+                            <img class="detail-img" src="pic/diy/1_2.svg">
+                            <div class="detail-card" >
+                                Cabbage 200g
+                                <br/>Footprint:  124 CO2
+                            </div>
+                        </div>
+                        <div class="container position-relative">
+                            <img class="detail-img" src="pic/diy/1_2.svg">
+                            <div class="detail-card" >
+                                Avocado 100g
+                                <br/>Footprint:  240 CO2
+                            </div>
+                        </div>
                         <p>Total:  680g CO2</p>
                     </div>
                 </div>
             <!--选材end-->
                 <div class="row" style="margin-top: 40px; ">
                     <div style="margin: 10px;">
-                        <a href="cart.html" class="btn hero-btn home-diy-btn">Add to Cart</a>
+                        <button type="button" class="btn btn-light" onclick="decStep()">Cart</button>
                     </div>
                     <!--<div style="margin: 10px;">
                         <button type="button" class="btn btn-light" onclick="addStep()">add to cart</button>
