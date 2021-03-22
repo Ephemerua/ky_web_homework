@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <!-- 必须的 meta 标签 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap 的 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<!-- Sidebar -->
+<nav class="animate__animated animate__fadeInRight" id="sidebar" hidden>
+    <div class="sidebar-header">
+        <div class="sidebar-btn" onclick="hideSidebar()"><i class="fas fa-times" style="width: 20px; height: 20px;position: absolute; right: 10px; top: 10px;"></i></div>
+    </div>
+    <div class="login-inputs" id="login-form">
+        <p style="color: white;">Welcome</p>
+        <div class="input-group input-group-lg mb-3 login" id="username">
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group input-group-lg mb-3 login" id="password">
+            <input type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="mb-3 row">
+            <button type="submit" class="btn btn-primary sidebar-signup-btn" onclick="showSignup()">Sign up</button>
+            <button type="submit" class="btn btn-primary sidebar-login-btn">Login</button>
+        </div>
+
+
+    </div>
+    <div class="signup-inputs" id="signup-form" hidden>
+        <p style="color: white;">Create your account</p>
+        <div class="row g-3">
+            <div class="col">
+                <div class="form-label">Uername</div>
+                <input type="text" class="form-control"  aria-label="First name">
+            </div>
+        </div>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <div class="form-label">Email</div>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <div class="form-label">Password</div>
+                <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+                <div class="form-label">Address</div>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+                <div class="form-label">Address2</div>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+                <div class="form-label">City</div>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-6">
+                <div class="form-label">Postcode</div>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign up</button>
+            </div>
+        </form>
+    </div>
+</nav>
+
+<!--side bar end-->
+<body>
+    <!--加载-->
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="pic/logo.svg" alt="logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area fixed-top">
+            <div class="main-header " >
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-1 col-lg-1 col-md-1 col-sm-3">
+                                <div class="logo h-100">
+                                    <a href="Home.html"><img src="pic/brand.svg" alt="brand" width="60"></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-8 col-md-7 col-sm-5">
+                                <!-- Main-menu -->
+                                <div class="main-menu f-right d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="Home.html">Home</a></li>
+                                            <li class="hot"><a href="#">Meal</a>
+                                                <ul class="submenu">
+                                                    <li><a href="Meal.html"> Selected Meal</a></li>
+                                                    <li><a href="DIY.html"> DIY Meal</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="Community.html">Community</a></li>
+                                            <li><a href="aboutUs.html">About Us</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-lg-3 col-md-3 col-sm-3 fix-card">
+                                <ul class="header-right f-right d-none d-lg-block d-flex justify-content-between">
+                                    <li>
+                                        <div class="shopping-card">
+                                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                                        </div>
+                                    </li>
+                                    <li class="d-none d-lg-block"> <a href="#" class="btn header-btn" onclick="showSidebar()">Sign in</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+
+    <main>
+        <img class="img-fluid" src="pic/diy/banner.png" width=100% height="auto">
+        <!--步骤条end-->
+        <div class="container section-padding" style="position: relative; margin-top: 50px;">
+            <!-- 圆盘 -->
+            <div class="overlay-nocolor animate__animated animate__fadeIn animate__delay-2s">
+                <div id="sketch-holder" class="col-sm-4" style="left: 70%;">
+                    
+                </div>
+                <!--sorry这里不要了<div style="position:relative; left: 85%; margin-top: 20px;">
+                    <button type="button" class="btn btn-light">Finish</button>
+                </div>-->
+            </div>
+            <div class="row">
+                <div class="circle-container">
+                    <div class="circle step"></div>
+                </div>
+                <div class="circle-container">
+                    <div class="circle step"></div>
+                </div>
+                <div class="circle-container">
+                    <div class="circle step"></div>
+                </div>
+                <div class="circle-container">
+                    <div class="circle step"></div>
+                </div>
+                <div class="circle-container">
+                    <div class="circle step"></div>
+                </div>
+            </div>
+            <h1 id="hhh" class="animate__animated animate__fadeInLeft animate__delay-1s hhh">Choose your Protein</h1>
+            <!--选材start-->
+            <div style="margin-top: 20px;">
+                <div class="row col-sm-10 animate__animated animate__fadeIn animate__delay-2s">
+                    <div class="row row-cols-auto">
+                        <div class="arrow-left arrow-btn" id="leftBtn" onclick="menuLeft()"></div>
+                        <div class="protein-container">
+                            <div class="overlay-nocolor">
+                                <img class="protein-img" src="pic/diy/1_1.svg">
+                            </div>
+                            <div class="protein">
+                                Bean
+                            </div>
+                            <div class="protein-btn"></div>
+                        </div>
+                        <div class="protein-container">
+                            <div class="overlay-nocolor">
+                                <img class="protein-img" src="pic/diy/1_2.svg">
+                            </div>
+                            <div class="protein">
+                                Corn
+                            </div>
+                            <div class="protein-btn"></div>
+                        </div>
+                        <div class="protein-container">
+                            <div class="overlay-nocolor">
+                                <img class="protein-img" src="pic/diy/1_3.svg">
+                            </div>
+                            <div class="protein">
+                                Farfalle
+                            </div>
+                            <div class="protein-btn"></div>
+                        </div>
+                        <div class="protein-container">
+                            <div class="overlay-nocolor">
+                                <img class="protein-img" src="pic/diy/1_4.svg">
+                            </div>
+                            <div class="protein">Potato
+                            </div>
+                            <div class="protein-btn"></div>
+
+                        </div>
+                        <div class="protein-container">
+                            <div class="overlay-nocolor">
+                                <img class="protein-img" src="pic/diy/1_5.svg">
+                            </div>
+                            <div class="protein">Pasta
+                            </div>
+                            <div class="protein-btn"></div>
+                        </div>
+                        <div class="arrow-right arrow-btn" id="rightBtn" onclick="menuRight()"></div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!--选材end-->
+            <div class="row" style="margin-top: 40px;">
+                <div style="margin: 10px;">
+                    <button type="button" class="btn btn-light" onclick="decStep()">Back</button>
+                </div>
+                <div style="margin: 10px;">
+                    <button type="button" class="btn btn-light" onclick="addStep()">Next</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!--footer-->
+    <div class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <p></p>
+                    <p style="align: left">copyright @Eat Well</p>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="footer-logo " >
+                        <img src="pic/brand.svg" height="30px">
+                        <p class="text-success">Refresh everyday</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="social-area">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                        <i style="color: white; padding-left: 10px;">Share with your friends!</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- bootstrap依赖:jquery bootstrap popper -->
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="js/bootstrap-4.6.0.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+    async></script>
+<script src="js/preloader.js"></script>
+<script src="js/buzhou.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/p5.min.js"></script>
+<script src="js/sketch.js"></script>
+<script src="https://kit.fontawesome.com/bf6c6d0421.js" crossorigin="anonymous"></script>
+</html>
