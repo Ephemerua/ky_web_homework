@@ -6,6 +6,7 @@ var inStepIndex = 0;
 var proteins = $(".protein-container");
 var protein_imgs = $(".protein-img");
 var protein_descs = $(".protein");
+var protein_btns = $(".protein-btn");
 var descs = [
     ["Beans", "Corn", "Farfalle", "otato", "Pasta", "Peas", "Rice"],
     ["Egg", "Cheese", "Chicken", "Fish", "Salmon", "Shrimp", "Tofu"],
@@ -13,9 +14,8 @@ var descs = [
     ["Avocado", "Blueberry", "Coconut", "Kiwi", "Lemon", "Mango"],
     ["Acorn", "Honey", "Mayonnaise", "Olive", "Peanut", "Pepper", "Pesto", "Pickles", "Vinaigrette"],
 ]
-var protein_title = $(".hhh");
+var protein_title = $("#hhh")[0];
 var title = ["sdasd","sdasd","asdasd","asdas","asdsad"]
-var plate = $("#diy_plate")[0];
 
 // 先加个id
 for (var i = 0; i < 5; i++) {
@@ -42,7 +42,6 @@ function setStep(stepIndex) {
         }
     }
     inStepIndex = 0
-    plate.setAttribute("src", "pic/step"+(stepIndex+1)+".svg")
     resetAnimate();
     setTimeout(updateMenu, 100);
 }
@@ -81,6 +80,9 @@ function updateMenu() {
     var stepItemNum = descs[idx].length
     var rightBtn = $("#rightBtn")[0]
     var leftBtn = $("#leftBtn")[0]
+
+    protein_title.innerHTML = title[idx]
+
     //处理按钮
     if (startIndex + 5 >= stepItemNum) {
         //没有更多item了，隐藏右滑按钮
@@ -113,7 +115,9 @@ function updateMenu() {
         protein_imgs[pIndex].setAttribute("src", "pic/diy/" + (idx + 1) + "_" + (i + 1) + ".svg")
         //改描述
         protein_descs[pIndex].innerHTML = descs[idx][i]
-       // protein_title[pIndex].innerHTML = title[idx][i]
+        //改加号按钮的点击事件
+        protein_btns[pIndex].setAttribute("onclick", "add_item("+stepIndex+","+i+",2)")
+
     }
 }
 
