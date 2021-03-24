@@ -183,6 +183,58 @@ body {
     top: 20px;
 }
 
+.meal-icon1 {
+    background: url("../pic/diykcal.svg");
+
+    color: #FFFFFF;
+    width: 36px;
+    height: 39px;
+    left: 75px;
+    top: -6px;
+    position: relative;
+}
+
+.meal-icon2 {
+    background: url("../pic/diyemission.svg");
+    color: #FFFFFF;
+    width: 28px;
+    height: 41px;
+    left: 124px;
+    top: -40px;
+    position: relative;
+}
+
+.meal-icon-tex {
+    margin-left: 10px;
+    width: 30px;
+    color: #FFFFFF;
+    line-height: 12px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding: 10px;
+    margin: -6px;
+}
+
+.meal-card-textbox {
+    width: 28px;
+    height: 41px;
+    left: 168px;
+    top: -66px;
+    position: relative;
+}
+
+
+.meal-card-tex {
+    margin-left: 10px;
+    width: 30px;
+    color: #1E8449;
+    line-height: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 10px;
+    margin: -6px;
+}
 .meal-item-bg {
     background-color: #ddd;
     background-position: center;
@@ -717,7 +769,7 @@ p {
     left: 0%;
 }
 
-.top60 { margin-top:60px; }
+.top40 { margin-top:40px; }
 
 
 .accordion-btn{
@@ -738,6 +790,18 @@ p {
 .pa-breadcrumb {
     padding: 160px 0 120px;
     background: linear-gradient(45deg,rgba(0, 0, 0, 0.56),rgba(0, 0, 0, 0.56) ), url(../pic/banner.png);
+    background-size: cover;
+}
+
+.diy-breadcrumb {
+    padding: 200px 0 180px;
+    background: linear-gradient(45deg,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0) ), url(../pic/banner_DIY.png);
+    background-size: cover;
+}
+
+.meal-breadcrumb {
+    padding: 200px 0 180px;
+    background: linear-gradient(45deg,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0) ), url(../pic/banner_Selected.png);
     background-size: cover;
 }
 
@@ -895,4 +959,36 @@ input{
 
 .pointer-cursor{
     cursor: pointer;
+}
+
+.porfile-btn {
+    position: absolute;
+    text-align: center;
+    right: 5%;
+    z-index: 1001;
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    color: #728346;
+    line-height: 40px;
+    background-color: white;
+    background-size: contain;
+}
+
+.porfile-tex {
+    color: #229954;
+    font-size: 45px;
+    margin: -18px;
+}
+
+.profile-background{
+    background: url("../pic/profile.png");
+    width: 100%;
+    z-index: -20;
+}
+
+.diy-background{
+    background: url("../pic/diybg.png");
+    width: 100%;
+    z-index: -20;
 }

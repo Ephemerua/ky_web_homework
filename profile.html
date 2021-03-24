@@ -131,12 +131,10 @@
                             </div>
                             <div class="col-xl-5 col-lg-3 col-md-3 col-sm-3 fix-card">
                                 <ul class="header-right f-right d-none d-lg-block d-flex justify-content-between">
-                                    <li>
-                                        <div class="shopping-card">
-                                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-                                        </div>
-                                    </li>
-                                    <li class="d-none d-lg-block"> <a href="#" class="btn header-btn" onclick="showSidebar()">Sign in</a></li>
+                                    <li class="d-none d-lg-block"> <a class="porfile-btn" href="profile.html">
+                                        <i class="far fa-user-circle porfile-tex" aria-hidden="true"></i>
+                                        </i>
+                                    </a>
                                 </ul>
                             </div>
                         </div>
@@ -147,17 +145,38 @@
         <!-- Header End -->
     </header>
 
-    <main>
+    <main class="profile-background" >
     <!-- 正文  -->
-        <div class="container section-padding">
+        <div class="container section-padding ">
             <div class="row">
                 <div class="col">
-                    <h1 class="text-center">Protfile</h1>
+                    <div class="pa-bill-form">
+                        <form>
 
+                            <label class="pa-bill-title">
+                                <br>
+                                Profile
+                            </label>
+                            <img src="pic/brand.svg" style="width: 100px">
+                            <label>
+                                <span>Name</span>
+                                <p>Tommy</p>
+                            </label>
+                            <label>
+                                <span>Mobile</span>
+                                <p>+44 (0)131 650 4360</p>
+                            </label>
+                            <label>
+                                <span>Address</span>
+                                <p>The University of Edinburgh，57 George Square，Edinburgh，EH8 9JU</p>
+                            </label>
+                        </form>
+                    </div>
                 </div>
                 <div class="col">
-                    <h1 class="text-center">History Order</h1>
+
                                 <div id="accordion" class="order-accordion">
+                                    <p class="pa-bill-title">History order</p>
                                     <div class="card">
                                         <div class="card-header" id="headingOne">
                                             <h5 class="mb-0">
@@ -212,7 +231,7 @@
                                         <div class="card-header" id="headingTwo">
                                             <h5 class="mb-0">
                                                 <div class="accordion-btn collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                    Collapsible Group Item #2
+                                                    Date 20/03/21  Order number #20212128
                                                 </div>
                                             </h5>
                                         </div>
@@ -261,7 +280,7 @@
                                         <div class="card-header" id="headingThree">
                                             <h5 class="mb-0">
                                                 <div class="accordion-btn collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                    Collapsible Group Item #3
+                                                    Date 26/03/21  Order number #20811928
                                                 </div>
                                             </h5>
                                         </div>

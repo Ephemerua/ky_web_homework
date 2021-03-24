@@ -15,7 +15,7 @@ var descs = [
     ["Acorn", "Honey", "Mayonnaise", "Olive", "Peanut", "Pepper", "Pesto", "Pickles", "Vinaigrette"],
 ]
 var protein_title = $("#hhh")[0];
-var title = ["sdasd","sdasd","asdasd","asdas","asdsad"]
+var title = ["Grains & Pulses","Protein","Vegtables","Fruit","Sauces&Flavor"]
 
 // 先加个id
 for (var i = 0; i < 5; i++) {
