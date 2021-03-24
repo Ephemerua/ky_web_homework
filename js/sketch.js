@@ -65,7 +65,7 @@ class item {
 
 //-------processing jobs start here------
 function preload() {
-    plate_img = loadImage('pic/diyBowl.png');
+    plate_img = loadImage('pic/diy/bowl.svg');
     load_item_images()
 }
 

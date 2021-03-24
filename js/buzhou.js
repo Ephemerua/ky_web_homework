@@ -58,8 +58,17 @@ function addStep(addnum) {
     if (stepIndex < 4) {
         stepIndex += addnum;
         setStep(stepIndex);
+        jumpdetail()
     }
 }
+
+function jumpdetail() {
+    if (stepIndex == 5) {
+        end_btn = $("#jumptode")[0]
+        end_btn.setAttribute( "onclick", location="detail.html")
+    }
+}
+
 
 function decStep() {
     if (stepIndex) {
@@ -120,6 +129,7 @@ function updateMenu() {
 
     }
 }
+
 
 function menuRight() {
     inStepIndex += 5
