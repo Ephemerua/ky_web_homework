@@ -58,14 +58,15 @@ function addStep(addnum) {
     if (stepIndex < 4) {
         stepIndex += addnum;
         setStep(stepIndex);
-        jumpdetail()
     }
+    jumpdetail()
 }
 
 function jumpdetail() {
-    if (stepIndex == 5) {
+    if (stepIndex == 4) {
         end_btn = $("#jumptode")[0]
-        end_btn.setAttribute( "onclick", location="detail.html")
+        end_btn.setAttribute( "onclick", "location='detail.html'")
+        end_btn.innerHTML = "Complete"
     }
 }
 

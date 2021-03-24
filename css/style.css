@@ -992,3 +992,16 @@ input{
     width: 100%;
     z-index: -20;
 }
+
+#cal-form label span{
+    line-height: 40px !important;
+}
+
+#cal-form select{
+    margin-left: 20px;
+}
+
+#cal-form input{
+    margin-top: 5px;
+    width: 40%;
+}
