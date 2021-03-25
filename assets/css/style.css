@@ -228,7 +228,7 @@ button:focus {
 }
 
 .header-area .header-bottom {
-  padding: 0 170px
+  padding: 0 30px
 }
 
 @media only screen and (min-width:1200px) and (max-width:1600px) {

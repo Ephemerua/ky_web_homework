@@ -126,7 +126,7 @@ function updateMenu() {
         //改描述
         protein_descs[pIndex].innerHTML = descs[idx][i]
         //改加号按钮的点击事件
-        protein_btns[pIndex].setAttribute("onclick", "add_item("+stepIndex+","+i+",2)")
+        protein_btns[pIndex].setAttribute("onclick", "add_item("+stepIndex+","+i+",1)")
 
     }
 }
