@@ -999,11 +999,13 @@ input{
 
 #cal-form select{
     margin-left: 20px;
+    width: 42%;
 }
 
 #cal-form input{
-    margin-top: 5px;
     width: 42%;
+    height: 40px;
+    line-height: 40px;
 }
 
 .cal-table th:last-child{

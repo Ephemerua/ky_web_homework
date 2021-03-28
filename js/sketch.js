@@ -42,6 +42,7 @@ function add_item(stepIndex, itemIndex, num){
     for(i = 0; i < num; i++){
         created_items.push(new item(stepIndex, itemIndex, plate_size, 60, 60))
     }
+    choosed_items.push([stepIndex, itemIndex])
     plate_height -= 15
 }
 
@@ -132,23 +133,25 @@ function draw_rect(){
     rect(0,0,90,90)
 }
 
-function mouseClicked(){
-    x = mouseX
-    y = mouseY
-    alert(x+" "+y)
-    for(i = 0; i < click_slots.length; i++){
-        slot = click_slots[i]
-        if(x>slot[0] && x < slot[0]+60){
-            if(y > slot[1] && y < slot[1]+60){
-                //clicked on an item
-                toRemove = created_items[i]
-                created_items.pop(i)
-                delete toRemove
-            }
-        }
-    }
-}
+// function mouseClicked(){
+//     x = mouseX
+//     y = mouseY
+//     for(i = 0; i < click_slots.length; i++){
+//         slot = click_slots[i]
+//         if(x>slot[0] && x < slot[0]+60){
+//             if(y > slot[1] && y < slot[1]+60){
+//                 //clicked on an item
+//                 toRemove = created_items[i]
+//                 created_items.pop(i)
+//                 delete toRemove
+//             }
+//         }
+//     }
+// }
 
 created_items = []
+
+//把这个给后端？
+choosed_items = []
 
 
