@@ -274,7 +274,6 @@ button:focus {
   text-transform: capitalize;
   padding: 39px 18px;
   display: block;
-  font-size: 14px;
   -webkit-transition: all .3s ease-out 0s;
   -moz-transition: all .3s ease-out 0s;
   -ms-transition: all .3s ease-out 0s;
@@ -306,7 +305,7 @@ button:focus {
   position: relative
 }
 
-.header-bottom .main-menu ul li.hot::before {
+/*.header-bottom .main-menu ul li.hot::before {
   position: absolute;
   content: "HOT";
   background: #ff003c;
@@ -326,7 +325,7 @@ button:focus {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 500
-}
+}*/
 
 .header-bottom .main-menu ul ul.submenu {
   position: absolute;
