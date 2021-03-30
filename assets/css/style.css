@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,600,700,800|Poppins:400,500,600,700|Yellowtail&display=swap);
+@import url（'https://fonts.googleapis.com/css2？family = Sigmar + One＆ display = swap'）;
 
 body {
   font-family: Poppins, sans-serif;
@@ -7,7 +8,7 @@ body {
 }
 
 h1 {
-  font-family: 'PT Serif', serif;
+  font-family: 'Sigmar One', cursive;
   color: #0b1c39;
   margin-top: 0;
   font-style: normal;

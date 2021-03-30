@@ -184,43 +184,58 @@ body {
 }
 
 .meal-icon1 {
-    background: url("../pic/diykcal.svg");
+    background: url("../pic/meal/footprint.svg");
 
     color: #FFFFFF;
-    width: 36px;
-    height: 39px;
-    left: 75px;
-    top: -6px;
+    width: 35px;
+    height: 40px;
+    left: 50px;
+    top: -20px;
     position: relative;
 }
 
 .meal-icon2 {
-    background: url("../pic/diyemission.svg");
+    background: url("../pic/meal/cal.svg");
     color: #FFFFFF;
-    width: 28px;
-    height: 41px;
-    left: 124px;
-    top: -40px;
+    width: 35px;
+    height: 35px;
+    left: 168px;
+    top: -50px;
     position: relative;
 }
 
 .meal-icon-tex {
     margin-left: 10px;
-    width: 30px;
-    color: #FFFFFF;
+    width: 145px;
+    color: #8ca549;
     line-height: 12px;
-    letter-spacing: 1px;
-    font-size: 12px;
-    padding: 10px;
+
+    font-size: 14px;
+    padding: 15px;
     margin: -6px;
 }
 
-.meal-card-textbox {
+.meal-icon-tex2 {
+    margin-left: 10px;
+    width: 159px;
+    color: #8ca549;
+    line-height: 9px;
+
+    font-size: 14px;
+    padding: 15px;
+    margin: -6px;
+}
+
+.meal-icon-textbox {
     width: 28px;
     height: 41px;
-    left: 168px;
-    top: -66px;
+    left: 62px;
+    top: -48px;
     position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    color: #585858;
+    font-family: Poppins, sans-serif;
 }
 
 
@@ -290,13 +305,13 @@ body {
 .meal-card {
     position: relative;
     left: 15%;
-    height: 160px;
-    width: 270px;
-    background-color: #a1c45a;
+    height: 180px;
+    width: 290px;
+    background-color: #d0e49c;
     border-radius: 15px;
     text-align: center;
-    line-height: 120px;
-    font-size: 18px;
+    line-height: 90px;
+    font-size: 25px;
     color: #FFFFFF;
     margin: 20px;
     cursor: pointer;
@@ -308,13 +323,13 @@ body {
     bottom: 7%;
     right: 5%;
     z-index: 1001;
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 30px;
     border-radius: 40px;
-    font-size: 22px;
-    color: #728346;
-    line-height: 40px;
-    background-color: white;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 30px;
+    background-color: #6e8434;
     background-size: contain;
 }
 
@@ -1041,4 +1056,11 @@ input{
     color: #D7486D ;
     line-height: 26px;
     padding: 10px;
+}
+
+.home-down{
+    margin-left: 50%;
+    margin: 160px;
+    font-size: 40px;
+    color: #bfd685;
 }
