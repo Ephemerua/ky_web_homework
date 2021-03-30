@@ -1025,3 +1025,20 @@ input{
     text-align: center;
 }
 
+.readydiy-text{
+    width: 600px;
+    text-align: left;
+    font-size: 18px;
+    color: #4C5B5C;
+    line-height: 26px;
+    padding: 10px;
+}
+
+.readydiy-text2{
+    width: 600px;
+    text-align: left;
+    font-size: 18px;
+    color: #D7486D ;
+    line-height: 26px;
+    padding: 10px;
+}

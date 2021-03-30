@@ -8,9 +8,9 @@ var protein_imgs = $(".protein-img");
 var protein_descs = $(".protein");
 var protein_btns = $(".protein-btn");
 var descs = [
-    ["Beans", "Corn", "Farfalle", "otato", "Pasta", "Peas", "Rice"],
-    ["Egg", "Cheese", "Chicken", "Fish", "Salmon", "Shrimp", "Tofu"],
-    ["Broccoli", "Cabbage", "Carrot", "Cucumber", "Kale", "Lettuce", "Mushroom", "Oinon", "Pepper", "Red Cabbage", "Radish", "Tomato"],
+    ["Beans", "Corn", "Farfalle", "Potato", "Pasta", "Peas", "Rice"],
+    ["Egg", "Cheese", "Chicken", "Basa", "Salmon", "Shrimp", "Tofu"],
+    ["Broccoli", "Cabbage", "Carrot", "Cucumber", "Kale", "Lettuce", "Mushroom", "Oinon", "Pepper", "RedCabbage", "Radish", "Tomato"],
     ["Avocado", "Blueberry", "Coconut", "Kiwi", "Lemon", "Mango"],
     ["Acorn", "Honey", "Mayonnaise", "Olive", "Peanut", "Pepper", "Pesto", "Pickles", "Vinaigrette"],
 ]

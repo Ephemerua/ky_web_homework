@@ -9,6 +9,7 @@
     <!-- Bootstrap 的 CSS 文件 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -120,7 +121,7 @@
                                             <li class="hot"><a href="#" style="color:#269354">Meal</a>
                                                 <ul class="submenu">
                                                     <li><a href="Meal.html"> Selected Meal</a></li>
-                                                    <li><a href="diy_p5.html"> DIY Meal</a></li>
+                                                    <li><a href="DIY.html"> DIY Meal</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="Community.html">Community</a></li>
@@ -147,106 +148,46 @@
         <!-- Header End -->
     </header>
 
-    <main>
+    <main class="diy-background">
         <!-- breadcrumb start -->
         <div class="diy-breadcrumb">
             <div class="container-fluid">
                 <div class="cart-banner-text" >
-                    <h1 style="color:#F8F9F9">create your own bowl</h1>
+                    <h1 style="color:#F8F9F9" >create your own bowl</h1>
                 </div>
             </div>
         </div>
+        <!-- breadcrumb end -->
         <!--步骤条end-->
-        <div class="container section-padding" style="position: relative; ">
+        <div class="container section-padding" style="position: relative;">
             <!-- 圆盘 -->
             <div class="overlay-nocolor animate__animated animate__fadeIn animate__delay-2s">
-                <div id="sketch-holder" class="col-sm-4" style="left: 70%; top:100px">
-
+                <div class="col-sm-4" style="left: 70%; top:100px">
+                    <img id="diy_plate" src="pic/diy/bowl.svg" width="400" alt="...">
                 </div>
                 <!--sorry这里不要了<div style="position:relative; left: 85%; margin-top: 20px;">
                     <button type="button" class="btn btn-light">Finish</button>
                 </div>-->
             </div>
-            <div class="row">
-                <div class="circle-container">
-                    <div class="circle step"></div>
-                </div>
-                <div class="circle-container">
-                    <div class="circle step"></div>
-                </div>
-                <div class="circle-container">
-                    <div class="circle step"></div>
-                </div>
-                <div class="circle-container">
-                    <div class="circle step"></div>
-                </div>
-                <div class="circle-container">
-                    <div class="circle step"></div>
-                </div>
-            </div>
-            <h1 id="hhh" class="animate__animated animate__fadeInLeft animate__delay-1s hhh">Choose your Protein</h1>
+            <h1 class="animate__animated animate__fadeInLeft animate__delay-1s hhh">Introduction before starting your meal</h1>
             <!--选材start-->
-            <div style="margin-top: 20px;">
-                <div class="row col-sm-10 animate__animated animate__fadeIn animate__delay-2s">
-                    <div class="row row-cols-auto">
-                        <div class="arrow-left arrow-btn" id="leftBtn" onclick="menuLeft()"></div>
-                        <div class="protein-container">
-                            <div class="overlay-nocolor">
-                                <img class="protein-img" src="pic/diy/1_1.svg">
-                            </div>
-                            <div class="protein">
-                                Bean
-                            </div>
-                            <div class="protein-btn"></div>
-                        </div>
-                        <div class="protein-container">
-                            <div class="overlay-nocolor">
-                                <img class="protein-img" src="pic/diy/1_2.svg">
-                            </div>
-                            <div class="protein">
-                                Corn
-                            </div>
-                            <div class="protein-btn"></div>
-                        </div>
-                        <div class="protein-container">
-                            <div class="overlay-nocolor">
-                                <img class="protein-img" src="pic/diy/1_3.svg">
-                            </div>
-                            <div class="protein">
-                                Farfalle
-                            </div>
-                            <div class="protein-btn"></div>
-                        </div>
-                        <div class="protein-container">
-                            <div class="overlay-nocolor">
-                                <img class="protein-img" src="pic/diy/1_4.svg">
-                            </div>
-                            <div class="protein">Potato
-                            </div>
-                            <div class="protein-btn"></div>
-
-                        </div>
-                        <div class="protein-container">
-                            <div class="overlay-nocolor">
-                                <img class="protein-img" src="pic/diy/1_5.svg">
-                            </div>
-                            <div class="protein">Pasta
-                            </div>
-                            <div class="protein-btn"></div>
-                        </div>
-                        <div class="arrow-right arrow-btn" id="rightBtn" onclick="menuRight()"></div>
-
-                    </div>
-                </div>
-
+            <div class="readydiy-text">
+                <div style="color: #6fc034">Step 1:</div> Click to start choosing dishes
+            </div>
+            <div class="readydiy-text">
+                <div style="color: #6fc034">Step 2:</div> Click on each type of ingredients, each ingredient you click will be added to the bowl on the right
+            </div>
+            <div class="readydiy-text">
+                <div style="color: #6fc034">Step 3:</div> Confirm the selected materials
+            </div>
+            <div class="readydiy-text2">Note：
+                <br>* You can choose up to 14 ingredients
+                <br>* The price of each ingredient is £2
             </div>
             <!--选材end-->
             <div class="row" style="margin-top: 40px;">
                 <div style="margin: 10px;">
-                    <button type="button" class="btn btn-light" onclick="decStep()">Back</button>
-                </div>
-                <div style="margin: 10px;">
-                    <button type="button" class="btn btn-light" id="jumptode" onclick="addStep()" >Next</button>
+                    <a type="button" class="btn btn-light" href="diy_p5.html">start</a>
                 </div>
             </div>
         </div>
@@ -296,7 +237,5 @@
 <script src="js/preloader.js"></script>
 <script src="js/buzhou.js"></script>
 <script src="js/nav.js"></script>
-<script src="js/p5.min.js"></script>
-<script src="js/sketch.js"></script>
 <script src="https://kit.fontawesome.com/bf6c6d0421.js" crossorigin="anonymous"></script>
 </html>
